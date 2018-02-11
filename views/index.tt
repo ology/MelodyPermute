@@ -1,0 +1,220 @@
+<% 
+patches => {
+    '0' => "Acoustic Grand",
+    '1' => "Bright Acoustic",
+    '10' => "Music Box",
+    '100' => "FX 5 (brightness)",
+    '101' => "FX 6 (goblins)",
+    '102' => "FX 7 (echoes)",
+    '103' => "FX 8 (sci-fi)",
+    '104' => "Sitar",
+    '105' => "Banjo",
+    '106' => "Shamisen",
+    '107' => "Koto",
+    '108' => "Kalimba",
+    '109' => "Bagpipe",
+    '11' => "Vibraphone",
+    '110' => "Fiddle",
+    '111' => "Shanai",
+    '112' => "Tinkle Bell",
+    '113' => "Agogo",
+    '114' => "Steel Drums",
+    '115' => "Woodblock",
+    '116' => "Taiko Drum",
+    '117' => "Melodic Tom",
+    '118' => "Synth Drum",
+    '119' => "Reverse Cymbal",
+    '12' => "Marimba",
+    '120' => "Guitar Fret Noise",
+    '121' => "Breath Noise",
+    '122' => "Seashore",
+    '123' => "Bird Tweet",
+    '124' => "Telephone Ring",
+    '125' => "Helicopter",
+    '126' => "Applause",
+    '127' => "Gunshot",
+    '13' => "Xylophone",
+    '14' => "Tubular Bells",
+    '15' => "Dulcimer",
+    '16' => "Drawbar Organ",
+    '17' => "Percussive Organ",
+    '18' => "Rock Organ",
+    '19' => "Church Organ",
+    '2' => "Electric Grand",
+    '20' => "Reed Organ",
+    '21' => "Accordion",
+    '22' => "Harmonica",
+    '23' => "Tango Accordion",
+    '24' => "Acoustic Guitar(nylon)",
+    '25' => "Acoustic Guitar(steel)",
+    '26' => "Electric Guitar(jazz)",
+    '27' => "Electric Guitar(clean)",
+    '28' => "Electric Guitar(muted)",
+    '29' => "Overdriven Guitar",
+    '3' => "Honky-Tonk",
+    '30' => "Distortion Guitar",
+    '31' => "Guitar Harmonics",
+    '32' => "Acoustic Bass",
+    '33' => "Electric Bass(finger)",
+    '34' => "Electric Bass(pick)",
+    '35' => "Fretless Bass",
+    '36' => "Slap Bass 1",
+    '37' => "Slap Bass 2",
+    '38' => "Synth Bass 1",
+    '39' => "Synth Bass 2",
+    '4' => "Electric Piano 1",
+    '40' => "Violin",
+    '41' => "Viola",
+    '42' => "Cello",
+    '43' => "Contrabass",
+    '44' => "Tremolo Strings",
+    '45' => "Pizzicato Strings",
+    '46' => "Orchestral Strings",
+    '47' => "Timpani",
+    '48' => "String Ensemble 1",
+    '49' => "String Ensemble 2",
+    '5' => "Electric Piano 2",
+    '50' => "SynthStrings 1",
+    '51' => "SynthStrings 2",
+    '52' => "Choir Aahs",
+    '53' => "Voice Oohs",
+    '54' => "Synth Voice",
+    '55' => "Orchestra Hit",
+    '56' => "Trumpet",
+    '57' => "Trombone",
+    '58' => "Tuba",
+    '59' => "Muted Trumpet",
+    '6' => "Harpsichord",
+    '60' => "French Horn",
+    '61' => "Brass Section",
+    '62' => "SynthBrass 1",
+    '63' => "SynthBrass 2",
+    '64' => "Soprano Sax",
+    '65' => "Alto Sax",
+    '66' => "Tenor Sax",
+    '67' => "Baritone Sax",
+    '68' => "Oboe",
+    '69' => "English Horn",
+    '7' => "Clav",
+    '70' => "Bassoon",
+    '71' => "Clarinet",
+    '72' => "Piccolo",
+    '73' => "Flute",
+    '74' => "Recorder",
+    '75' => "Pan Flute",
+    '76' => "Blown Bottle",
+    '77' => "Skakuhachi",
+    '78' => "Whistle",
+    '79' => "Ocarina",
+    '8' => "Celesta",
+    '80' => "Lead 1 (square)",
+    '81' => "Lead 2 (sawtooth)",
+    '82' => "Lead 3 (calliope)",
+    '83' => "Lead 4 (chiff)",
+    '84' => "Lead 5 (charang)",
+    '85' => "Lead 6 (voice)",
+    '86' => "Lead 7 (fifths)",
+    '87' => "Lead 8 (bass+lead)",
+    '88' => "Pad 1 (new age)",
+    '89' => "Pad 2 (warm)",
+    '9' => "Glockenspiel",
+    '90' => "Pad 3 (polysynth)",
+    '91' => "Pad 4 (choir)",
+    '92' => "Pad 5 (bowed)",
+    '93' => "Pad 6 (metallic)",
+    '94' => "Pad 7 (halo)",
+    '95' => "Pad 8 (sweep)",
+    '96' => "FX 1 (rain)",
+    '97' => "FX 2 (soundtrack)",
+    '98' => "FX 3 (crystal)",
+    '99' => "FX 4 (atmosphere)"
+  }
+%>
+
+<form action="/generate" method="post">
+<div id="page">
+
+      <div id="sidebar">
+        <ul id="sidebar-items">
+          <li>
+            <h3>Parameters</h3>
+            <ul class="links">
+              <li>
+                Treble notes:
+                <input type="text" name="treb_notes" maxlength="20" size="" value="<% treb_notes %>" />
+              </li>
+              <li>
+                Treble durations:
+                <input type="text" name="treb_dura" maxlength="20" size="" value="<% treb_dura %>" />
+              </li>
+              <li>
+                Treble velocities:
+                <input type="text" name="treb_velo" maxlength="20" size="" value="<% treb_velo %>" />
+              </li>
+              <li>
+                Bass notes:
+                <input type="text" name="bass_notes" maxlength="20" size="" value="<% bass_notes %>" />
+              </li>
+              <li>
+                Bass durations:
+                <input type="text" name="bass_dura" maxlength="20" size="" value="<% bass_dura %>" />
+              </li>
+              <li>
+                Bass velocities:
+                <input type="text" name="bass_velo" maxlength="20" size="" value="<% bass_velo %>" />
+              </li>
+              <li>
+                Note max:
+                <input type="text" name="max" maxlength="3" size="3" value="<% max %>" />
+              </li>
+              <li>
+                Patch:
+                <select name="patch">
+                <% FOREACH p IN patches %>
+                    <option value="<% p.key %>" <% p.key == patch ? 'selected' : '' %>><% p.value %></option>
+                <% END %>
+                </select>
+              </li>
+              <li>
+                Channel:
+                <select name="channel">
+                <% FOREACH c IN [ 1 .. 16 ] %>
+                    <option value="<% c %>" <% c == channel ? 'selected' : '' %>><% c %></option>
+                <% END %>
+                </select>
+              </li>
+              <li>
+                BPM:
+                <input type="text" name="bpm" maxlength="3" size="3" value="<% bpm %>" />
+              </li>
+              <li><input type="submit" /></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div id="content">
+        <div id="header">
+          <h1>Permuted Melody</h1>
+          <h2>Algorithmic Music</h2>
+        </div>
+        <% IF request.uri == '/generate' %>
+        <p style="text-align: center">
+            <a href="#" onClick="MIDIjs.play('MelodyPermute.mid');">Play</a>
+            |
+            <a href="#" onClick="MIDIjs.stop();">Stop</a>
+            |
+            <a href="MelodyPermute.mid">Download</a>
+        </p>
+        <% END %>
+        <h2>Example</h2>
+        <p>Treble notes: C5 E5 F5 As4</p>
+        <p>Treble durations: en en qn qn</p>
+        <p>Treble velocities: mp mezzo mf f</p>
+        <p>Bass notes: C3 F3 G3 C4</p>
+        <p>Bass durations: qn qn qn en</p>
+        <p>Bass velocities: f f f f</p>
+      </div>
+
+    </div>
+</form>
