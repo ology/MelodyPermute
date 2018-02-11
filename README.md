@@ -1,2 +1,2 @@
 # MelodyPermute
-Note values + Permute + Shuffle
+Dancer Perl Web App = Note values + Permute + Shuffle
